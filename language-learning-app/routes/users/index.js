@@ -57,7 +57,7 @@ module.exports = async function (fastify, opts) {
     const user = fastify.users.get(request.params.id)
     if (!user) {
       reply.code(404)
-      return { message: 'User not found' }
+      return { message: 'User found' }
     }
     return user
   })
