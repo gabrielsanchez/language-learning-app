@@ -17,7 +17,7 @@ module.exports = async function (fastify, opts) {
     schema: {
       body: {
         type: 'object',
-        required: ['name', 'mail'],
+        required: ['name', 'email'],
         properties: {
           name: { type: 'string', minLength: 1 },
           email: { type: 'string', format: 'email' }
